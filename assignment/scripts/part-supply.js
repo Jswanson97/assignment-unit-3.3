@@ -5,23 +5,27 @@ console.log('****** Part Supply *******');
 
 // 1. Create a variable called 'partsNeeded' with a value of the number 40.
 console.log('1. Create partsNeeded:');
-
+let partsNeeded = 40;
+console.log ('The value of partsNeeded is', partsNeeded);
 
 // 2. Create a variable called 'supplyChanges' whose value is an array containing
 //    the following numbers: 3, 5, -6, 0, 7, 11.
 console.log('2. Create supplyChanges:');
-
+let supplyChanges = [3, 5, -6, 0, 7, 11];
+console.log ('The values of supplyChanges is currently', supplyChanges);
 
 // 3. Create a variable called 'secondItem' and assign it the value of the second
 //    item in the 'supplyChanges' array.
 console.log('3. Access the second value of supplyChanges:');
-
+let secondItem = supplyChanges[1];
+console.log('The value of secondItem is', secondItem);
 
 // 4. The last value in the 'supplyChanges' array was added by mistake.
 //    Remove it from the array and store it inside a new variable called 'removedItem'.
 console.log('4. Remove the last value from supplyChanges:');
-
-
+let removedItem = supplyChanges.pop();
+supplyChanges.pop()
+console.log ('The value of removedItem is',removedItem , 'which was the last value of supplyChanges.');
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
 console.log('5. Add the value 25 into supplyChanges.');
 
