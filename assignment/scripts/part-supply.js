@@ -41,8 +41,20 @@ console.log('6. Looping through supplyChanges to populate arrays with positive, 
 let positives = [];
 let negatives = [];
 let zeroes = [];
-
-
+for (let i = 0; i < supplyChanges.length; i++) {
+  if (supplyChanges[i] > 0) {
+    positives.push(supplyChanges[i]);
+  }
+  if (supplyChanges[i] < 0) {
+    negatives.push(supplyChanges[i]);
+  }
+  if (supplyChanges[i] == 0) {
+    zeroes.push(supplyChanges[i]);
+  }
+}
+console.log ('All the positive numbers are', positives);
+console.log ('All the negative numbers are',negatives);
+console.log ('All the zeroes',zeroes);
 
 // ***** STRETCH GOALS *********************************************
 // 7. Rewrite the 'for' loop from #6 as a 'for...of' loop. Instead of 'positives',
